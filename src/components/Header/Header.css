@@ -16,3 +16,8 @@ a{
     all:unset;
     cursor:pointer;
 }
+@media screen and (max-width: 700px) {
+    .row, .navbar, .App {   
+      flex-direction: column;
+    }
+  }

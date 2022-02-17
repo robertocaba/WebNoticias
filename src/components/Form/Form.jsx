@@ -46,13 +46,13 @@ const Form = () => {
         placeholder="Name"
         onChange={handleInputChange}
         value={data.Name}
-        Name="Name"
+        name="Name"
       />
       <input
         type="image"
         placeholder="image"
         onChange={handleInputChange}
-        Name="image"
+        name="image"
         value={data.image}
       />
       <button type="submit">Enviar</button>
