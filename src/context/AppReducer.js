@@ -1,12 +1,12 @@
-const posts = (state, action) => {
+const listNews = (state, action) => {
     switch (action.type) {
       case "GET_CHARACTERS":
         return {
           ...state,
-          characters: action.payload,
+          listNews: action.payload,
         };
       default:
         return state;
     }
   };
-  export default posts;
+  export default listNews;

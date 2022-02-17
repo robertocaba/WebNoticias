@@ -1,0 +1,11 @@
+.listNews{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.listNew{
+    margin: 1em;
+    background-color: rgb(209, 209, 209);
+    padding: 1em;
+    border-radius: 1em;
+}

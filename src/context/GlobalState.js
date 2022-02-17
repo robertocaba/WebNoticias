@@ -3,7 +3,7 @@ import axios from 'axios'
 import AppReducer from "./AppReducer";
 
 const initialState = {
-  posts: []
+  listNews: []
 }
 
 export const GlobalContext = createContext(initialState);
@@ -26,7 +26,7 @@ export const GlobalProvider = ({ children }) => {
       <GlobalContext.Provider
       //pasamos los valores del provider
         value={{
-          posts: state.posts,
+          listNews: state.listNews,
           getCharacters,
         }}
       >

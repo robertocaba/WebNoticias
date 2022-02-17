@@ -8,7 +8,7 @@ const Form = () => {
 
   const [data, setData] = useState({
     Name: "",
-    email: "",
+    image: "",
   });
   const handleInputChange = (event) => {
     console.log(event.target.Name);
@@ -20,20 +20,20 @@ const Form = () => {
   };
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log("sending data..." + data.Name, data.email);
+    console.log("sending data..." + data.Name, data.image);
     setTimeout(() => {
         navigate('/')
     }, 1000);
   };
 
   let Name = data.Name;
-  let email = data.email;
+  let image = data.image;
 
   let dataBase = JSON.parse(localStorage.getItem('myform')) || [];
     const information = {
         
         Name,
-        email
+        image
          
      }
      dataBase.push(information)
@@ -49,11 +49,11 @@ const Form = () => {
         Name="Name"
       />
       <input
-        type="email"
-        placeholder="email"
+        type="image"
+        placeholder="image"
         onChange={handleInputChange}
-        Name="email"
-        value={data.email}
+        Name="image"
+        value={data.image}
       />
       <button type="submit">Enviar</button>
     </form>
