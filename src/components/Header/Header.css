@@ -1,0 +1,18 @@
+
+   
+.header{
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+    background-color: rgb(103, 104, 104);
+    color: white;
+}
+
+.header div span{
+    margin: 1em;
+}
+
+a{
+    all:unset;
+    cursor:pointer;
+}
