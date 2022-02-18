@@ -13,12 +13,13 @@ export const GlobalProvider = ({ children }) => {
   
     //Función que nos traé los personajes de ricky morty
     const getCharacters = async () => {
-      const res = await axios.get("https://api.nytimes.com/svc/search/v2/articlesearch.json?q=election&api-key= CrNmyABOU6AniEf58hmAj4KguvQI1PX5");
+      const res = await axios.get("https://api.nytimes.com/svc/topstories/v2/food.json?api-key=VLslSANKe2fXbThErESGpBMb6TUUV1fi");
 
       //dispachamos la acción que hará que cambie el estado de los personajes
+     
       dispatch({
         type: "GET_CHARACTERS",
-        payload: res.data.response.docs,
+        payload: res.data.results,
       });
     };
   

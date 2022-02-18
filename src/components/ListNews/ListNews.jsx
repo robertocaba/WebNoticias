@@ -11,8 +11,9 @@ const ListNews = () => {
   const listNew = listNews.map((listNew) => {
    return (
      <div className="listNew" key={listNew._id}>
-       <h1>{listNew.abstract}</h1>
-       <h2>{listNew.lead_paragraph} </h2>
+       <h1>{listNew.title}</h1>
+       <img src={listNew.multimedia[0].url}/>
+       <h2>{listNew.abstract} </h2>
      </div>
    );
   });
