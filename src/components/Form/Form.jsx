@@ -4,11 +4,11 @@ import { useNavigate } from "react-router-dom";
 
 
 const Form = () => {
-    let navigate = useNavigate();
+   let navigate = useNavigate();
 
   const [data, setData] = useState({
     Name: "",
-    image: "",
+    articulo: "",
   });
   const handleInputChange = (event) => {
     console.log(event.target.Name);
@@ -20,20 +20,20 @@ const Form = () => {
   };
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log("sending data..." + data.Name, data.image);
+    console.log("sending data..." + data.Name, data.articulo);
     setTimeout(() => {
         navigate('/')
     }, 1000);
   };
 
   let Name = data.Name;
-  let image = data.image;
+  let articulo = data.articulo;
 
   let dataBase = JSON.parse(localStorage.getItem('myform')) || [];
     const information = {
         
         Name,
-        image
+        articulo
          
      }
      dataBase.push(information)
@@ -45,15 +45,15 @@ const Form = () => {
         type="text"
         placeholder="Name"
         onChange={handleInputChange}
-        value={data.Name}
+       // value={data.Name}
         name="Name"
       />
       <input
-        type="image"
-        placeholder="image"
+        type="text"
+        placeholder="articulo"
         onChange={handleInputChange}
-        name="image"
-        value={data.image}
+        name="articulo"
+       // value={data.articulo}
       />
       <button type="submit">Enviar</button>
     </form>
