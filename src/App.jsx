@@ -5,8 +5,10 @@ import ListNews from './components/ListNews/ListNews';
 import Header from './components/Header/Header';
 import Home from './components/Home/Home';
 import Form from './components/Form/Form';
+
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { GlobalProvider } from "./context/GlobalState";
+import Footer from './components/Footer/Footer';
 
 
 function App() {
@@ -23,6 +25,7 @@ function App() {
             <Route path="/ListNews" element={<ListNews />}/>
           </Routes>
           </Router>  
+          <Footer />
 
     </GlobalProvider>
   </div>
