@@ -6,6 +6,7 @@ Para el formulario utilizaremos useState, para pasar los datos. Los input tendr√
 Para modificar el State, crearemos una funci√≥n onChange. Con los datos ya introducidos utilizaremos onSubmit.
 
 Recordar de levantar el servidor $ npm start
+<img width="240" alt="Captura de pantalla 2021-10-17 a las 18 23 39" src="https://user-images.githubusercontent.com/94751976/154837180-5a1a096e-9684-4fdd-a23d-d6b20394e031.png">
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
